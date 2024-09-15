@@ -4,6 +4,7 @@ import {
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
 import React, { useEffect } from "react";
+import dotenv from "dotenv";
 import { useLoading } from "../../hooks/useLoading";
 import { pay } from "../../services/orderService";
 import { useCart } from "../../hooks/useCart";
