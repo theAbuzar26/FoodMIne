@@ -4,7 +4,6 @@ import {
   usePayPalScriptReducer,
 } from "@paypal/react-paypal-js";
 import React, { useEffect } from "react";
-import dotenv from "dotenv";
 import { useLoading } from "../../hooks/useLoading";
 import { pay } from "../../services/orderService";
 import { useCart } from "../../hooks/useCart";
@@ -15,7 +14,8 @@ export default function PaypalButtons({ order }) {
   return (
     <PayPalScriptProvider
       options={{
-        clientId: process.env.PAYPAL_CLIENT_ID,
+        clientId:
+          "AYRLqaHKOhuAfLxbUJtNshJicCuAzJ9bSuMcA7LXW1_AYuU2WvQ9TmxJyzCqFaKgO-S-EwJmQqj7z5by",
       }}
     >
       <Buttons order={order} />
